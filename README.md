@@ -12,3 +12,8 @@ Description of system:
 - microbit was programmed to react to magnetic changes which alerted a python program
 - python program accessed the database and updated the alarm activity
 - database contacted and updated the website
+
+File descriptions:
+serial_reader.py :
+- python program that communicated with the Microbit
+- if the 'alarm' was triggered, Python accesses and updated the Firebase database information on alarm status
