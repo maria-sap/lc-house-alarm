@@ -36,20 +36,20 @@ while True:
         user = "john_doe@gmail.com"
         status = data_entry[1]
         value = {"user": user, "status": status, "date_time": date_time}
-        print(value)
+        #print(value)
         firebase = pyrebase.initialize_app(config)
         db = firebase.database()
 
         # try catch in case issues connecting to firebase
         try:
             db.child("users").set(value)
-            print('Transaction completed')
+            #print('Transaction completed')
         except db.TransactionAbortedError:
-            print('Transaction failed to commit')
+            #print('Transaction failed to commit')
 
         if data_entry[1] == "Alarm triggered":  # if alert was triggered send SMS via Twilio service to phone
             # twilio config
-            print("Alert was triggered")
+            #print("Alert was triggered")
             account_sid = 'AC58a289c9685b08e3a197b29d52019666'
             auth_token = '2daef5d63b052e32946447dd04cf0b33'
             client = Client(account_sid, auth_token)
@@ -61,4 +61,4 @@ while True:
                 to='+353894231154'
             )
 
-            print(message.sid)
+            #print(message.sid)
