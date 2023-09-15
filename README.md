@@ -14,6 +14,7 @@ Description of system:
 - database contacted and updated the website
 
 File descriptions:
+
 microbit-magnet-alarm.hex :
 - a program for the microbit that checks for change in magnetism
 - if a change is detected, the microbit sends a signal to a USB connected device about the alarm activating (which runs a python program)
@@ -22,3 +23,9 @@ microbit-magnet-alarm.hex :
 serial_reader.py :
 - python program that communicated with the Microbit
 - if the 'alarm' was triggered, Python accesses and updated the Firebase database information on alarm status
+
+the website:
+- details product 'details'
+- has a log-in system using the Firebase database
+- communicates with the database and updates details displayed on the website accordingly
+- I may go back and update and improve the visuals of the website in the future
