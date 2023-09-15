@@ -10,7 +10,7 @@ ser.port = "COM4"
 ser.open()
 today = datetime.datetime.now()
 date_time = today.strftime("%m/%d/%Y, %H:%M:%S")
-# unique user hardcoded on remote pc connected to sensor
+# unique user hardcoded on remote pc connected to sensor - hardcoded onto every users' alarm systems
 user = "john_doe@gmail.com"
 
 # firebase config
