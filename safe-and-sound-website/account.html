@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <!-- header : name & links -->
+    <header> 
+      <div class="navbar">
+            <ul>
+              <!-- name -->
+              <li class="name">
+                <a class="main-page-link" href="index.html">SAFE & SOUND</a>
+              </li>
+              
+              <!-- links -->
+              <li class="links">
+                <a class="nav-link" href="index.html"> main page </a>
+              </li>
+              <li class="links">
+                <a class="nav-link" href="smart-home.html"> smart home | about </a>
+              </li>
+              <li class="links">
+                <a class="nav-link" href="services.html"> services </a>
+              </li>
+              <li class="links">
+                <a class="nav-link active" href="account.html"> my account </a>
+              </li>
+              <li class="links">
+                <a class="nav-link" href="faq.html"> faq </a>
+              </li>
+            </ul>
+          </div> 
+    </header>
+    <br>
+    <br>
+
+    <!-- IF NOT LOGGED IN -->
+    <div id="login_div" class="main-div">
+      <h2 class="title">YOU AREN'T LOGGED IN. <br> CREATE AN ACCOUNT OR LOG INTO AN EXISTING ACCOUNT.</h2>
+      <input type="email" placeholder="email" id="email_field" />
+      <input type="password" placeholder="password" id="password_field" />
+  
+      <button onclick="login()" class="buttons">Login to Account</button>
+      <h4> OR </h4>
+      <button onclick="signin()" class="buttons">Create new Account</button>
+    </div>
+
+
+    <!-- WHEN LOGGED IN -->
+    <div id="user_div" class="loggedin-div">
+      <p id="user_para" class="para"></p>
+
+        <div class="link-name">
+            <div class="option">
+              <p> Device User:</p>
+            </div>
+            <div class="option">
+              <p>System Status:</p>
+            </div>
+            <div class="option">
+              <p> Last trigger time and date :</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="link-name">
+            <div class="option">
+              <p id="device_user" class="option-name"></p>
+            </div>
+            <div class="option">
+              <p id="status" class="option-name"></p>
+            </div>
+            <div class="option">
+              <p id="date_time" class="option-name"></p>
+            </div>
+        </div>
+
+      <div class="clear"></div>
+      <br>
+      <br>
+      <button onclick="logout()" class="buttons">Logout</button>
+    </div>
+    <div class="footer-distributed">
+      <div class="footer-left">
+        <h3>SAFE & SOUND</h3>
+        <p class="footer-company-name"> Safe & Sound © 2022</p>
+      </div>
+      <div class="footer-center">
+        <div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>34 Park Ave. </span> D4, Ireland</p>
+				</div>
+        <div>
+					<i class="fa fa-phone"></i>
+					<p>+353 86 777 3535</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">safe&sound@gmail.com</a></p>
+				</div>
+			</div>
+      
+      <div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>ABOUT US</span>
+					Safe & Sound is a smart home company that has recently (10/01/22) entered into the business. Keep your home Safe & Sound with us.
+				</p>
+
+			</div>
+		</div>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDuiGROW-6eI6jUcwB7yxrbuPk3Wp16_dk",
+        authDomain: "cs-coursework-website-database.firebaseapp.com",
+        databaseURL: "https://cs-coursework-website-database-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "cs-coursework-website-database",
+        storageBucket: "cs-coursework-website-database.appspot.com",
+        messagingSenderId: "777266945228",
+        appId: "1:777266945228:web:b4195b192be94b246e3669",
+        measurementId: "G-FLSZKWCSG7"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

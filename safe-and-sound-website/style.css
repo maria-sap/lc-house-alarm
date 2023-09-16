@@ -1,0 +1,459 @@
+html{
+  height: 100%;
+  margin: auto;
+  overflow: scroll;
+}
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align:center;
+  margin:0;
+}
+
+
+
+/* header */
+.navbar {
+  color: #363636 ;
+  background-color: white; 
+  margin: 0;
+}
+ul {
+  width:100%;
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #9ecbf5;
+}
+
+.links {
+  float: right;
+}
+.name {
+  font-size: 25px;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+.nav-link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.main-page-link  {
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: #363636 ;
+}
+.active {
+  color: #363636;
+}
+
+
+
+
+/* MAIN PAGE CSS */
+/* main page pt 1 */
+.main1 {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  display: block;
+}
+img {
+  width: 50%;
+}
+.main-image{
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.about-text {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 70%;
+}
+
+
+/* main page pt 2 */
+.main2 {
+  padding: 20px;
+  background-color: #363636;
+  color: white;
+}
+.fade-in-text {
+  display: inline-block;
+  animation: fadeIn linear 5s;
+  -webkit-animation: fadeIn linear 5s;
+  -moz-animation: fadeIn linear 5s;
+  -o-animation: fadeIn linear 5s;
+  -ms-animation: fadeIn linear 5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+  
+/* main page pt 3 */
+.main3 {
+  background-color: white;
+  color: #363636 ;
+}
+.option {
+  margin-left: 10%;
+  float: left;
+  width: 20%;
+  margin-top:0px;
+}
+.link-name {
+  color: black;
+}
+.link-icon {
+  color: #9ecbf5;
+}
+.main3:after {
+  content: "";
+  display: table;
+}
+.option-icon {
+  font-size: 30px;
+  text-decoration: none;
+  color: #9ecbf5;
+}
+.fade-in-text {
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+/* FAQ PAGE CSS */
+.faq-collapsible {
+  padding-top: 100px;
+  color: #363636 ;
+}
+.faq {
+  background-color: white;
+  color: #363636 ;
+  font-size: 10px;
+  text-align: center;
+}
+.faq:hover {
+  background: #ccc;
+  color: #363636 ;
+}
+.collapsible {
+  background-color: white;
+  color: #363636;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+.answers, .collapsible:hover {
+  color: white;
+  background-color: #363636;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+}
+.collapsible_Text {
+  color: #363636;
+  font-size: 15px;
+}
+.answer {
+  text-align: left;
+}
+
+
+
+
+
+/* SMART HOME CSS */
+/* smart1 */
+.smart1 {
+  color:#363636;
+}
+.head {
+  margin-top: 100px;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.smart1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.sh1-image{
+  width: 70%;
+  margin-left: 5%;
+  margin-top: 100px;
+}
+.sh-content1 {
+  padding:5px;
+  color: #363636 ;
+  text-align: right;
+}
+
+/* smart2 */
+.smart2 {
+  background-color: #363636 ;
+  color: white;
+}
+.sh-content2 {
+  padding:10px;
+  color: white;
+  text-align: left;
+}
+.sh-content3 {
+  text-align: right;
+}
+
+/* smart3 */
+.smart3 {
+  background-color: white;
+  color:#363636 ;
+}
+.sh-content3 {
+  padding:5px;
+  color: #363636 ;
+  text-align: left;
+}
+
+
+/* LOG IN CSS */
+
+.main-div, .loggedin-div {
+  width: 75%;
+  padding: 20px;
+  display: none;
+  margin: 0px auto;
+}
+
+.main-div input {
+  display: block;
+  background: white;
+  padding: 15px;
+  outline: none;
+  width: 30%;;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-div button {
+  background: #363636;
+  color: white;
+  padding: 15px;
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.loggedin-div button {
+  background: #363636;
+  color: white;
+  padding: 15px;
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-div button:hover, .loggedin-div button:hover {
+  background: #666;
+  color: white;
+  cursor: pointer;
+}
+
+/* SERVICES CSS */
+.service-div {
+  color:#363636;
+}
+.option-name {
+  margin-top: 100px;
+}
+.service-type {
+  float: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 30%;
+}
+.service-div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.service-img {
+  margin-top: 100px;
+  width: 100%;
+}
+.option-price {
+  color: #f99090;
+}
+
+
+
+/* ACCOUNT CSS */
+.title {
+  color:#33383b;
+  font-size: 30px;
+}
+input {
+  border-color: #666;
+}
+
+
+
+
+
+/* FOOTER CSS */
+.footer-distributed{
+	background: #666;
+	width: 100%;
+	text-align: left;
+	padding: 55px 50px;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+.footer-distributed .footer-left{
+	width: 40%;
+}
+.footer-distributed h3{
+	color:  white;
+	margin: 0;
+}
+
+/* Footer Center */
+.footer-center{
+	width: 35%;
+}
+.footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+.footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+.footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+.footer-center p a{
+	color:  #9ecbf5;
+	text-decoration: none;;
+}
+.footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* CLEAR / SPACE BETWEEN DIVS */
+.clear{
+    clear:both;
+}
+
+/* Footer Right */
+.footer-right{
+	width: 20%;
+}
+.footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.footer-icons{
+	margin-top: 25px;
+}
+.footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
